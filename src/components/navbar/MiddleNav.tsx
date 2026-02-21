@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { navItems } from "./Items";
+import { MdLanguage } from "react-icons/md";
 
 export default function MiddleNav() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -10,10 +11,9 @@ export default function MiddleNav() {
   const location = useLocation();
   const navRef = useRef<HTMLDivElement | null>(null);
 
-  const activeClass =
-    "text-green-600 text-sm bg-green-100 rounded-lg px-3 py-2";
+  const activeClass = "text-white text-sm bg-brand rounded-lg px-3 py-2";
   const baseClass =
-    "text-gray-700 hover:text-green-600 transition font-medium text-sm hover:bg-green-100 rounded-lg px-3 py-2";
+    "text-gray-800 hover:text-brand transition font-medium text-sm hover:bg-brand/15 rounded-lg px-3 py-2";
 
   /* Close dropdown on outside click */
   useEffect(() => {
@@ -30,18 +30,22 @@ export default function MiddleNav() {
     <nav className="w-full bg-white py-3 relative" ref={navRef}>
       <div className="wrapper flex justify-between items-center">
         {/* LOGO */}
-        <div>
+        <div className="flex items-center gap-2">
           <Link to="/">
             <img
               src="/logo.png"
               alt="Logo"
-              className="h-20 w-20 rounded-full object-cover"
+              className="h-16 w-16 rounded-full object-cover"
             />
           </Link>
+          <div>
+            <p className="text-base font-semibold text-brand">জেলা পুলিশ </p>
+            <p className="text-yellow-600 text-sm">নারায়ণগঞ্জ</p>
+          </div>
         </div>
 
         {/* DESKTOP NAV */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-2">
           {navItems.map((item) => {
             const isChildActive = item.children?.some((child) =>
               location.pathname.startsWith(child.path),
@@ -103,6 +107,14 @@ export default function MiddleNav() {
             );
           })}
         </div>
+
+        {/* right part  */}
+
+        <button className="text-sm font-medium rounded-full px-6 py-2 border border-brand cursor-pointer flex items-center gap-3 ">
+          <MdLanguage size={25} />
+          Ban
+        </button>
+        {/* right part end  */}
 
         {/* MOBILE BUTTON */}
         <div className="md:hidden">

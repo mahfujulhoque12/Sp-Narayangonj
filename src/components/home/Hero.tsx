@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <div className="wrapper mt-10 flex flex-col md:flex-row gap-5">
       {/* Left Side Static Image */}
-      <div className="w-full md:w-[40%] shadow-sm border border-gray-200 rounded-xl">
+      <div className="w-full md:w-[30%] shadow-sm border border-gray-200 rounded-xl">
         <img
           src="/home/sp.jpg"
           alt="Static"
@@ -39,7 +39,7 @@ const Hero = () => {
       </div>
 
       {/* Right Side Slider */}
-      <div className="w-full md:w-[60%]  ">
+      <div className="w-full md:w-[70%]  ">
         <div className="embla overflow-hidden relative" ref={emblaRef}>
           <div className="embla__container flex">
             {images.map((img, index) => (

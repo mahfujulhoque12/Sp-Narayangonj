@@ -6,7 +6,7 @@ const TopNav = () => {
       <div className="wrapper flex justify-between items-center gap-3">
         <p className="para-1">গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</p>
         <Link to={"#"} className="para-1 text-yellow-500!">
-          জরুরী সেবা
+          জরুরী সেবা: 999
         </Link>
       </div>
     </div>

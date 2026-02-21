@@ -11,23 +11,28 @@ const BottomNav = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <div className="w-full bg-brand py-3 overflow-hidden z-0">
-      <Marquee pauseOnHover speed={60} gradient={false}>
-        <div className="flex items-center gap-12 px-4">
-          {newsData.map((item, index) => (
-            <p
-              key={index}
-              onMouseEnter={() => setActiveIndex(index)}
-              onMouseLeave={() => setActiveIndex(null)}
-              className={`cursor-pointer whitespace-nowrap text-sm font-medium transition-colors duration-300 ${
-                activeIndex === index ? "text-green-600" : "text-white"
-              }`}
-            >
-              {item}
-            </p>
-          ))}
-        </div>
-      </Marquee>
+    <div className="full bg-brand">
+      <div className=" wrapper py-3 overflow-hidden z-0 flex items-center gap-3 ">
+        <p className="whitespace-nowrap text-white text-base font-semibold">
+          শিরোনাম
+        </p>
+        <Marquee pauseOnHover speed={60} gradient={false}>
+          <div className="flex  items-center gap-12 px-4">
+            {newsData.map((item, index) => (
+              <p
+                key={index}
+                onMouseEnter={() => setActiveIndex(index)}
+                onMouseLeave={() => setActiveIndex(null)}
+                className={`cursor-pointer whitespace-nowrap text-sm font-medium transition-colors duration-300 ${
+                  activeIndex === index ? "text-green-600" : "text-white"
+                }`}
+              >
+                {item}
+              </p>
+            ))}
+          </div>
+        </Marquee>
+      </div>
     </div>
   );
 };
