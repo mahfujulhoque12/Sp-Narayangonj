@@ -1,0 +1,190 @@
+import { useState, useEffect, useRef } from "react";
+import { Link, NavLink, useLocation } from "react-router";
+import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import { navItems } from "./Items";
+
+export default function MiddleNav() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState<string | null>(null);
+
+  const location = useLocation();
+  const navRef = useRef<HTMLDivElement | null>(null);
+
+  const activeClass =
+    "text-green-600 text-sm bg-green-100 rounded-lg px-3 py-2";
+  const baseClass =
+    "text-gray-700 hover:text-green-600 transition font-medium text-sm";
+
+  /* Close dropdown on outside click */
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setDropdownOpen(null);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  return (
+    <nav className="w-full bg-white py-3" ref={navRef}>
+      <div className="wrapper">
+        <div className="flex justify-between items-center ">
+          {/* LOGO */}
+          <div>
+            <Link to={"/"}>
+              <img
+                src="/logo.png"
+                alt=""
+                className="h-20 w-20 rounded-full object-cover"
+              />
+            </Link>
+          </div>
+
+          {/* DESKTOP NAV */}
+          <div className="hidden md:flex items-center space-x-6">
+            {navItems.map((item) => {
+              const isChildActive = item.children?.some((child) =>
+                location.pathname.startsWith(child.path),
+              );
+
+              return (
+                <div key={item.label} className="relative group">
+                  {item.children ? (
+                    <>
+                      <button
+                        className={`flex items-center gap-1 font-medium cursor-pointer ${
+                          isChildActive
+                            ? activeClass
+                            : "text-gray-700 hover:text-green-600 text-sm"
+                        }`}
+                      >
+                        {item.label}
+                        <FaChevronDown
+                          size={12}
+                          className="transition-transform group-hover:rotate-180"
+                        />
+                      </button>
+
+                      {/* IMPORTANT FIX */}
+                      <div className="absolute left-0 top-full pt-2 hidden group-hover:block">
+                        <div className="w-50 bg-white shadow-lg flex flex-col rounded-md py-2 z-50 px-4 space-y-4">
+                          {item.children.map((child) => (
+                            <NavLink
+                              key={child.label}
+                              to={child.path}
+                              className={({ isActive }) =>
+                                isActive ? activeClass : baseClass
+                              }
+                            >
+                              {child.label}
+                            </NavLink>
+                          ))}
+                        </div>
+                      </div>
+                    </>
+                  ) : (
+                    <NavLink
+                      to={item.path!}
+                      className={({ isActive }) =>
+                        isActive ? activeClass : baseClass
+                      }
+                    >
+                      {item.label}
+                    </NavLink>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* MOBILE BUTTON */}
+          <div className="md:hidden">
+            <button onClick={() => setMobileOpen(!mobileOpen)}>
+              {mobileOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* MOBILE MENU */}
+      {mobileOpen && (
+        <div className="md:hidden bg-white border-t px-4 py-3 space-y-2">
+          {navItems.map((item) => {
+            const isChildActive = item.children?.some((child) =>
+              location.pathname.startsWith(child.path),
+            );
+
+            return (
+              <div key={item.label}>
+                {item.children ? (
+                  <>
+                    <button
+                      onClick={() =>
+                        setDropdownOpen(
+                          dropdownOpen === item.label ? null : item.label,
+                        )
+                      }
+                      className={`w-full flex justify-between items-center py-2 font-medium ${
+                        isChildActive
+                          ? "text-blue-600 font-semibold"
+                          : "text-gray-700"
+                      }`}
+                    >
+                      {item.label}
+                      <FaChevronDown
+                        size={12}
+                        className={`transition-transform ${
+                          dropdownOpen === item.label ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+
+                    {dropdownOpen === item.label && (
+                      <div className="pl-4 space-y-1">
+                        {item.children.map((child) => (
+                          <NavLink
+                            key={child.label}
+                            to={child.path}
+                            onClick={() => {
+                              setDropdownOpen(null);
+                              setMobileOpen(false);
+                            }}
+                            className={({ isActive }) =>
+                              `block py-1 text-sm ${
+                                isActive
+                                  ? "text-blue-600 font-semibold"
+                                  : "text-gray-600"
+                              }`
+                            }
+                          >
+                            {child.label}
+                          </NavLink>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <NavLink
+                    to={item.path!}
+                    onClick={() => setMobileOpen(false)}
+                    className={({ isActive }) =>
+                      `block py-2 ${
+                        isActive
+                          ? "text-blue-600 font-semibold"
+                          : "text-gray-700"
+                      }`
+                    }
+                  >
+                    {item.label}
+                  </NavLink>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </nav>
+  );
+}
