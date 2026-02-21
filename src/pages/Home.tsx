@@ -1,7 +1,9 @@
+import Hero from "../components/home/Hero";
+
 const Home = () => {
   return (
-    <div className="bg-brand ">
-      <h1 className="wrapper text-white">gdsrt</h1>
+    <div>
+      <Hero />
     </div>
   );
 };

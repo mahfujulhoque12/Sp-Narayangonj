@@ -6,16 +6,59 @@ type NavItem = {
 
 export const navItems: NavItem[] = [
   { label: "হোম", path: "/" },
-  { label: "আমাদের সম্পর্কে", path: "/about" },
+
+  {
+    label: "আমাদের কথা",
+    children: [
+      { label: "জেলা-পুলিশ", path: "#" },
+
+      { label: "কর্মকর্তাগণ", path: "#" },
+      { label: "কর্মচারীবৃন্দ", path: "#" },
+      { label: "প্রাক্তন আফিস প্রধানগণ", path: "#" },
+    ],
+  },
+
   {
     label: "সেবাসমূহ",
     children: [
-      { label: "অনলাইন সেবা", path: "/services/online" },
-      { label: "অফলাইন সেবা", path: "/services/offline" },
+      { label: "সেবার তালিকা", path: "#" },
+
+      { label: "কি সেবা কিভাবে পাবেন", path: "#" },
+      { label: "সিটিজেন চার্টার", path: "#" },
     ],
   },
-  { label: "পুলিশ লাইন্স", path: "/police-lines" },
-  { label: "সংবাদ", path: "/news" },
-  { label: "এনওসি", path: "/noc" },
-  { label: "যোগাযোগ", path: "/contact" },
+  {
+    label: "পুলিশ লাইন্স",
+    children: [
+      { label: "থানা", path: "#" },
+
+      { label: "ফাঁড়ি", path: "#" },
+      { label: "তদন্ত কেন্দ্র", path: "#" },
+      { label: "অফিসসমূহ", path: "#" },
+    ],
+  },
+  {
+    label: "খবর",
+    children: [
+      { label: "অভিযান", path: "#" },
+
+      { label: "আটক-উদ্ধার", path: "#" },
+      { label: "প্রেস ব্রিফিং", path: "#" },
+      { label: "বিজ্ঞপ্তি", path: "#" },
+      { label: "সফলতা", path: "#" },
+    ],
+  },
+  {
+    label: "অন্যান্য বিভাগ",
+    children: [
+      { label: "ডি বি", path: "#" },
+
+      { label: "ডি এস বি", path: "#" },
+      { label: "সার্কেল", path: "#" },
+      { label: "সি আই ডি", path: "#" },
+      { label: "সিটি এস বি", path: "#" },
+    ],
+  },
+
+  { label: "এনওসি", path: "#" },
 ];

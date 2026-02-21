@@ -13,7 +13,7 @@ export default function MiddleNav() {
   const activeClass =
     "text-green-600 text-sm bg-green-100 rounded-lg px-3 py-2";
   const baseClass =
-    "text-gray-700 hover:text-green-600 transition font-medium text-sm  hover:bg-green-100 rounded-lg px-3 py-2";
+    "text-gray-700 hover:text-green-600 transition font-medium text-sm hover:bg-green-100 rounded-lg px-3 py-2";
 
   /* Close dropdown on outside click */
   useEffect(() => {
@@ -22,54 +22,58 @@ export default function MiddleNav() {
         setDropdownOpen(null);
       }
     }
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
-    <nav className="w-full bg-white py-3" ref={navRef}>
-      <div className="wrapper">
-        <div className="flex justify-between items-center ">
-          {/* LOGO */}
-          <div>
-            <Link to={"/"}>
-              <img
-                src="/logo.png"
-                alt=""
-                className="h-20 w-20 rounded-full object-cover"
-              />
-            </Link>
-          </div>
+    <nav className="w-full bg-white py-3 relative" ref={navRef}>
+      <div className="wrapper flex justify-between items-center">
+        {/* LOGO */}
+        <div>
+          <Link to="/">
+            <img
+              src="/logo.png"
+              alt="Logo"
+              className="h-20 w-20 rounded-full object-cover"
+            />
+          </Link>
+        </div>
 
-          {/* DESKTOP NAV */}
-          <div className="hidden md:flex items-center space-x-6">
-            {navItems.map((item) => {
-              const isChildActive = item.children?.some((child) =>
-                location.pathname.startsWith(child.path),
-              );
+        {/* DESKTOP NAV */}
+        <div className="hidden md:flex items-center space-x-6">
+          {navItems.map((item) => {
+            const isChildActive = item.children?.some((child) =>
+              location.pathname.startsWith(child.path),
+            );
 
-              return (
-                <div key={item.label} className="relative group">
-                  {item.children ? (
-                    <>
-                      <button
-                        className={`flex items-center gap-1 font-medium cursor-pointer ${
-                          isChildActive
-                            ? activeClass
-                            : "text-gray-700 hover:text-green-600 transition font-medium text-sm  hover:bg-green-100 rounded-lg px-3 py-2"
+            return (
+              <div
+                key={item.label}
+                className="relative group"
+                onMouseEnter={() => setDropdownOpen(item.label)}
+                onMouseLeave={() => setDropdownOpen(null)}
+              >
+                {item.children ? (
+                  <>
+                    <button
+                      className={`flex items-center gap-1 font-medium cursor-pointer ${
+                        isChildActive ? activeClass : baseClass
+                      }`}
+                    >
+                      {item.label}
+                      <FaChevronDown
+                        size={12}
+                        className={`transition-transform ${
+                          dropdownOpen === item.label ? "rotate-180" : ""
                         }`}
-                      >
-                        {item.label}
-                        <FaChevronDown
-                          size={12}
-                          className="transition-transform group-hover:rotate-180"
-                        />
-                      </button>
+                      />
+                    </button>
 
-                      {/* IMPORTANT FIX */}
-                      <div className="absolute left-0 top-full pt-2 hidden group-hover:block">
-                        <div className="w-50 bg-white shadow-lg flex flex-col rounded-md py-2 z-50 px-4 space-y-4">
+                    {/* Dropdown */}
+                    {dropdownOpen === item.label && (
+                      <div className="absolute left-0 top-full pt-2 z-[50]">
+                        <div className="w-50 bg-white shadow-lg flex flex-col rounded-md py-2 px-4 space-y-4">
                           {item.children.map((child) => (
                             <NavLink
                               key={child.label}
@@ -83,34 +87,34 @@ export default function MiddleNav() {
                           ))}
                         </div>
                       </div>
-                    </>
-                  ) : (
-                    <NavLink
-                      to={item.path!}
-                      className={({ isActive }) =>
-                        isActive ? activeClass : baseClass
-                      }
-                    >
-                      {item.label}
-                    </NavLink>
-                  )}
-                </div>
-              );
-            })}
-          </div>
+                    )}
+                  </>
+                ) : (
+                  <NavLink
+                    to={item.path!}
+                    className={({ isActive }) =>
+                      isActive ? activeClass : baseClass
+                    }
+                  >
+                    {item.label}
+                  </NavLink>
+                )}
+              </div>
+            );
+          })}
+        </div>
 
-          {/* MOBILE BUTTON */}
-          <div className="md:hidden">
-            <button onClick={() => setMobileOpen(!mobileOpen)}>
-              {mobileOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
-            </button>
-          </div>
+        {/* MOBILE BUTTON */}
+        <div className="md:hidden">
+          <button onClick={() => setMobileOpen(!mobileOpen)}>
+            {mobileOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
+          </button>
         </div>
       </div>
 
       {/* MOBILE MENU */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t px-4 py-3 space-y-2">
+        <div className="md:hidden bg-white border-t px-4 py-3 space-y-2 z-[40]">
           {navItems.map((item) => {
             const isChildActive = item.children?.some((child) =>
               location.pathname.startsWith(child.path),
@@ -127,9 +131,7 @@ export default function MiddleNav() {
                         )
                       }
                       className={`w-full flex justify-between items-center py-2 font-medium ${
-                        isChildActive
-                          ? "text-blue-600 font-semibold"
-                          : "text-gray-700"
+                        isChildActive ? activeClass : baseClass
                       }`}
                     >
                       {item.label}
@@ -152,11 +154,7 @@ export default function MiddleNav() {
                               setMobileOpen(false);
                             }}
                             className={({ isActive }) =>
-                              `block py-1 text-sm ${
-                                isActive
-                                  ? "text-blue-600 font-semibold"
-                                  : "text-gray-600"
-                              }`
+                              isActive ? activeClass : baseClass
                             }
                           >
                             {child.label}
@@ -170,11 +168,7 @@ export default function MiddleNav() {
                     to={item.path!}
                     onClick={() => setMobileOpen(false)}
                     className={({ isActive }) =>
-                      `block py-2 ${
-                        isActive
-                          ? "text-blue-600 font-semibold"
-                          : "text-gray-700"
-                      }`
+                      isActive ? activeClass : baseClass
                     }
                   >
                     {item.label}
