@@ -29,9 +29,9 @@ const Hero = () => {
         <img
           src="/home/sp.jpg"
           alt="Static"
-          className="w-full object-contain h-[280px] md:h-[350px]"
+          className="w-full object-cover h-[280px] md:h-[350px]"
         />
-        <div className=" mt-3 bg-brand/10 py-2 rounded-b-xl">
+        <div className="  bg-brand/10 py-3.5 rounded-b-xl">
           <h2 className=" head-1 text-center">মোহাম্মদ মিজানুর রহমান মুন্সী</h2>
           <h3 className="head-2 text-center">পুলিশ সুপার, নারায়ণগঞ্জ</h3>
           <p className="para-1 text-black! text-center">০১৩২০০৯০৩০০</p>
@@ -40,12 +40,15 @@ const Hero = () => {
 
       {/* Right Side Slider */}
       <div className="w-full md:w-[70%]  ">
-        <div className="embla overflow-hidden relative" ref={emblaRef}>
-          <div className="embla__container flex">
+        <div
+          className="embla overflow-hidden relative rounded-xl"
+          ref={emblaRef}
+        >
+          <div className="embla__container flex rounded-xl">
             {images.map((img, index) => (
               <div
                 key={index}
-                className="embla__slide flex-shrink-0 w-full h-[350px] md:h-[450px] shadow-sm"
+                className="embla__slide flex-shrink-0 w-full h-[350px] md:h-[450px] shadow-sm rounded-xl"
               >
                 <img
                   src={img}
