@@ -13,7 +13,7 @@ export default function MiddleNav() {
   const activeClass =
     "text-green-600 text-sm bg-green-100 rounded-lg px-3 py-2";
   const baseClass =
-    "text-gray-700 hover:text-green-600 transition font-medium text-sm";
+    "text-gray-700 hover:text-green-600 transition font-medium text-sm  hover:bg-green-100 rounded-lg px-3 py-2";
 
   /* Close dropdown on outside click */
   useEffect(() => {
@@ -57,7 +57,7 @@ export default function MiddleNav() {
                         className={`flex items-center gap-1 font-medium cursor-pointer ${
                           isChildActive
                             ? activeClass
-                            : "text-gray-700 hover:text-green-600 text-sm"
+                            : "text-gray-700 hover:text-green-600 transition font-medium text-sm  hover:bg-green-100 rounded-lg px-3 py-2"
                         }`}
                       >
                         {item.label}
