@@ -31,11 +31,11 @@ const Hero = () => {
           alt="Static"
           className="w-full object-contain h-[280px] md:h-[350px]"
         />
-        <h2 className=" head-1 text-center mt-3">
-          মোহাম্মদ মিজানুর রহমান মুন্সী
-        </h2>
-        <h3 className="head-2 text-center">পুলিশ সুপার, নারায়ণগঞ্জ</h3>
-        <p className="para-1 text-black! text-center">০১৩২০০৯০৩০০</p>
+        <div className=" mt-3 bg-brand/10 py-2 rounded-b-xl">
+          <h2 className=" head-1 text-center">মোহাম্মদ মিজানুর রহমান মুন্সী</h2>
+          <h3 className="head-2 text-center">পুলিশ সুপার, নারায়ণগঞ্জ</h3>
+          <p className="para-1 text-black! text-center">০১৩২০০৯০৩০০</p>
+        </div>
       </div>
 
       {/* Right Side Slider */}
