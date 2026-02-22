@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import "./App.css";
 import Home from "./pages/Home";
-import AmederKhota from "./pages/AmederKhota";
 import Navbar from "./components/navbar/Navbar";
+import NOC from "./pages/NOC";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/ameder-khota" element={<AmederKhota />} />
+        <Route path="/noc" element={<NOC />} />
       </Routes>
     </BrowserRouter>
   );

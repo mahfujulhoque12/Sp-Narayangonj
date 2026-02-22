@@ -110,8 +110,8 @@ export default function MiddleNav() {
 
         {/* right part  */}
 
-        <button className="text-sm font-medium rounded-full px-3.5 py-2 border border-brand cursor-pointer flex items-center gap-2 ">
-          <MdLanguage size={20} />
+        <button className="text-sm font-medium rounded-full px-3 py-1.5 border border-brand cursor-pointer flex items-center gap-2 ">
+          <MdLanguage size={18} />
           Ban
         </button>
         {/* right part end  */}

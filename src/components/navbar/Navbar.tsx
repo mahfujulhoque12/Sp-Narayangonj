@@ -1,4 +1,3 @@
-import BottomNav from "./BottomNav";
 import MiddleNav from "./MiddleNav";
 import TopNav from "./TopNav";
 
@@ -7,7 +6,6 @@ const Navbar = () => {
     <div>
       <TopNav />
       <MiddleNav />
-      <BottomNav />
     </div>
   );
 };

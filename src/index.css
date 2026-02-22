@@ -10,10 +10,19 @@
 .para-1 {
   @apply text-sm font-normal text-white;
 }
+.para-2 {
+  @apply text-sm sm:text-base font-semibold text-center text-white;
+}
+.para-3 {
+  @apply text-blue-500 font-bold text-4xl;
+}
 
 .head-1 {
   @apply text-xl font-semibold text-black;
 }
 .head-2 {
   @apply text-base font-medium text-black;
+}
+.head-3 {
+  @apply text-center text-white font-semibold text-xl md:text-2xl lg:text-3xl;
 }
