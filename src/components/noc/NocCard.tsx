@@ -4,12 +4,12 @@ import {
   FaCheckCircle,
   FaClock,
   FaTimesCircle,
-  FaEye,
-  FaDownload,
   FaSearch,
   FaThLarge,
   FaList,
 } from "react-icons/fa";
+import GridView from "./GridView";
+import RowView from "./RowView";
 
 const tabs = ["সকল আবেদন", "অপেক্ষমান", "অনুমোদিত", "বাতিল"];
 
@@ -111,50 +111,12 @@ const NocCard = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredData.map((item) => {
-          const config = statusConfig[item.status];
-
-          return (
-            <div
-              key={item.id}
-              className={`bg-white rounded-2xl shadow border border-gray-200 border-t-4 ${config.border} p-5 flex flex-col justify-between`}
-            >
-              {/* Header */}
-              <div className="flex justify-between items-start">
-                <div
-                  className={`flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium ${config.color}`}
-                >
-                  {config.icon}
-                  {config.label}
-                </div>
-                <span className="text-sm text-gray-400">{item.id}</span>
-              </div>
-
-              {/* Body */}
-              <div className="mt-4 space-y-2">
-                <h3 className="text-lg font-semibold">{item.name}</h3>
-                <span className="inline-block px-2 py-1 bg-gray-100 text-xs rounded">
-                  {item.type}
-                </span>
-                <p className="text-sm text-gray-500">
-                  জমা দেওয়া হয়েছে {item.date}
-                </p>
-              </div>
-
-              {/* Footer */}
-              <div className="flex justify-between items-center mt-6 text-sm text-gray-600">
-                <button className="flex items-center gap-2 hover:text-blue-600 transition">
-                  <FaEye /> দেখুন
-                </button>
-                <button className="flex items-center gap-2 hover:text-blue-600 transition">
-                  <FaDownload /> ডাউনলোড
-                </button>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      {/* View Render */}
+      {viewMode === "grid" ? (
+        <GridView data={filteredData} statusConfig={statusConfig} />
+      ) : (
+        <RowView data={filteredData} statusConfig={statusConfig} />
+      )}
     </div>
   );
 };
