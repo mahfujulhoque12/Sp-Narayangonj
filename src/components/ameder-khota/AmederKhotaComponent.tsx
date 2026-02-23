@@ -1,3 +1,4 @@
+import Amra from "./Amra";
 import Mollobod from "./Mollobod";
 
 const AmederKhotaComponent = () => {
@@ -15,6 +16,7 @@ const AmederKhotaComponent = () => {
       {/* top part end  */}
 
       <Mollobod />
+      <Amra />
     </div>
   );
 };
