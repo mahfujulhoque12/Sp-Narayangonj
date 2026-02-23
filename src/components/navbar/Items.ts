@@ -9,13 +9,7 @@ export const navItems: NavItem[] = [
 
   {
     label: "আমাদের কথা",
-    children: [
-      { label: "জেলা-পুলিশ", path: "#" },
-
-      { label: "কর্মকর্তাগণ", path: "#" },
-      { label: "কর্মচারীবৃন্দ", path: "#" },
-      { label: "প্রাক্তন আফিস প্রধানগণ", path: "#" },
-    ],
+    path: "/ameder-khota",
   },
 
   {
