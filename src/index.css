@@ -2,7 +2,10 @@
 @theme {
   --color-brand: #0a007c;
 }
-
+html,
+body {
+  background-color: #f7fafb;
+}
 .wrapper {
   @apply max-w-300 mx-auto px-4;
 }

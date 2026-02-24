@@ -1,9 +1,9 @@
-import { kormokortaData } from "../../../data/data";
+import { kormochariData } from "../../../data/data";
 
-const Kormokortagon = () => {
+const Kormochari = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-5 ">
-      {kormokortaData.map((data) => (
+      {kormochariData.map((data) => (
         <div
           key={data.id}
           className=" rounded-xl bg-brand/50 border border-gray-200 hover:shadow-xl transition-all duration-500 group flex flex-col justify-between h-full"
@@ -26,4 +26,4 @@ const Kormokortagon = () => {
   );
 };
 
-export default Kormokortagon;
+export default Kormochari;

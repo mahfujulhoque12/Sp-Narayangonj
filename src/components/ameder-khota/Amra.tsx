@@ -3,6 +3,8 @@ import { FaSearch } from "react-icons/fa";
 import { LuUsers } from "react-icons/lu";
 import OfficeProdan from "./OfficeProdan";
 import Kormokortagon from "./Kormokortagon";
+import Kormochari from "./Kormochari";
+import ExOfficeProdan from "./ExOfficeProdan";
 
 const Amra = () => {
   const tabs = [
@@ -61,6 +63,8 @@ const Amra = () => {
       <div className="my-7">
         {activeTab === "অফিস প্রধান" && <OfficeProdan />}
         {activeTab === "কর্মকর্তাগণ" && <Kormokortagon />}
+        {activeTab === "কর্মচারীবৃন্দ" && <Kormochari />}
+        {activeTab === "প্রাক্তন আফিস প্রধানগণ" && <ExOfficeProdan />}
       </div>
     </div>
   );

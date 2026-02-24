@@ -52,7 +52,7 @@ const Mollobod = () => {
         {values.map(({ id, title, description, icon: Icon }) => (
           <div
             key={id}
-            className="bg-[#F8F9FA] rounded-xl px-5 flex justify-center items-center flex-col py-8"
+            className="bg-white hover:shadow-xl transition-all duration-300 rounded-xl px-5 flex justify-center items-center flex-col py-8"
           >
             <div className="p-2 rounded-full bg-brand/10 text-brand mb-4">
               <Icon size={20} />

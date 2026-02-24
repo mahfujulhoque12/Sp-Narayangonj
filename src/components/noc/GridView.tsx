@@ -13,7 +13,7 @@ const GridView = ({ data }: GridViewProps) => {
         return (
           <div
             key={item.id}
-            className={`bg-white rounded-2xl shadow border border-brand border-t-4  p-5 flex flex-col justify-between`}
+            className={`bg-white hover:shadow-xl transition-all duration-300 rounded-2xl shadow border border-brand border-t-4  p-5 flex flex-col justify-between`}
           >
             {/* Header */}
             <div className="flex justify-between items-start">
