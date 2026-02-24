@@ -8,7 +8,7 @@ const Kormokortagon = () => {
           key={data.id}
           className=" rounded-xl bg-brand/50 border border-gray-200 hover:shadow-xl transition-all duration-500 group flex flex-col justify-between h-full"
         >
-          <div className="h-[350px] w-full overflow-hidden">
+          <div className="h-[280px] md:h-[430px] w-full overflow-hidden rounded-t-xl">
             <img
               src={data.img}
               alt={data.name}

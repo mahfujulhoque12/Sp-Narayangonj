@@ -1,4 +1,5 @@
 type Status = "approved" | "pending" | "rejected";
+import img1 from "../public/kormokorta/1.jpg";
 
 interface NocItem {
   id: string;
@@ -6,6 +7,7 @@ interface NocItem {
   type: string;
   date: string;
   status: Status;
+  image: string;
 }
 
 export const mockData: NocItem[] = [
@@ -15,6 +17,7 @@ export const mockData: NocItem[] = [
     type: "যানবাহন",
     date: "2024-02-10",
     status: "approved",
+    image: img1,
   },
   {
     id: "NOC-2024-002",
@@ -22,6 +25,7 @@ export const mockData: NocItem[] = [
     type: "নির্মাণ",
     date: "2024-02-12",
     status: "pending",
+    image: img1,
   },
   {
     id: "NOC-2024-003",
@@ -29,6 +33,7 @@ export const mockData: NocItem[] = [
     type: "ইভেন্ট",
     date: "2024-02-14",
     status: "rejected",
+    image: img1,
   },
   {
     id: "NOC-2024-004",
@@ -36,6 +41,7 @@ export const mockData: NocItem[] = [
     type: "যানবাহন",
     date: "2024-02-15",
     status: "approved",
+    image: img1,
   },
   {
     id: "NOC-2024-005",
@@ -43,6 +49,7 @@ export const mockData: NocItem[] = [
     type: "ব্যবসা",
     date: "2024-02-16",
     status: "pending",
+    image: img1,
   },
   {
     id: "NOC-2024-006",
@@ -50,6 +57,7 @@ export const mockData: NocItem[] = [
     type: "নির্মাণ",
     date: "2024-02-17",
     status: "approved",
+    image: img1,
   },
   {
     id: "NOC-2024-007",
@@ -57,6 +65,7 @@ export const mockData: NocItem[] = [
     type: "যানবাহন",
     date: "2024-02-18",
     status: "rejected",
+    image: img1,
   },
   {
     id: "NOC-2024-008",
@@ -64,6 +73,7 @@ export const mockData: NocItem[] = [
     type: "ইভেন্ট",
     date: "2024-02-19",
     status: "pending",
+    image: img1,
   },
   {
     id: "NOC-2024-009",
@@ -71,6 +81,7 @@ export const mockData: NocItem[] = [
     type: "নির্মাণ",
     date: "2024-02-20",
     status: "approved",
+    image: img1,
   },
   {
     id: "NOC-2024-010",
@@ -78,6 +89,7 @@ export const mockData: NocItem[] = [
     type: "নির্মাণ",
     date: "2024-02-21",
     status: "pending",
+    image: img1,
   },
   {
     id: "NOC-2024-011",
@@ -85,6 +97,7 @@ export const mockData: NocItem[] = [
     type: "যানবাহন",
     date: "2024-02-22",
     status: "approved",
+    image: img1,
   },
   {
     id: "NOC-2024-012",
@@ -92,10 +105,10 @@ export const mockData: NocItem[] = [
     type: "ইভেন্ট",
     date: "2024-02-23",
     status: "rejected",
+    image: img1,
   },
 ];
 
-import img1 from "../public/kormokorta/1.jpg";
 import img2 from "../public/kormokorta/2.jpg";
 import img3 from "../public/kormokorta/4.jpg";
 import img4 from "../public/kormokorta/5.jpg";

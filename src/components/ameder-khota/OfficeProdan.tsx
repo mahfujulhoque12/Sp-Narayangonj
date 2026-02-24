@@ -6,7 +6,7 @@ const OfficeProdan = () => {
         <img
           src="/home/sp.jpg"
           alt="Static"
-          className="w-full  h-[280px] md:h-[430px]"
+          className="w-full  h-[280px] md:h-[430px] rounded-t-xl"
         />
         <div className="  bg-brand/10 py-3.5 rounded-b-xl">
           <h2 className=" head-1 text-center">মোহাম্মদ মিজানুর রহমান মুন্সী</h2>
