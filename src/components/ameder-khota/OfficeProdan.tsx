@@ -1,14 +1,14 @@
 const OfficeProdan = () => {
   return (
-    <div className="wrapper mt-10 flex flex-col md:flex-row gap-5">
+    <div className=" mt-10 flex flex-col md:flex-row gap-5">
       {/* Left Side Static Image */}
       <div className="w-full md:w-[30%] shadow-sm border border-gray-200 rounded-xl">
         <img
           src="/home/sp.jpg"
           alt="Static"
-          className="w-full  h-[280px] md:h-[430px] rounded-t-xl"
+          className="w-full  h-[280px] md:h-[380px] rounded-t-xl"
         />
-        <div className="  bg-brand/10 py-3.5 rounded-b-xl">
+        <div className="  bg-brand/15 py-3.5 rounded-b-xl">
           <h2 className=" head-1 text-center">মোহাম্মদ মিজানুর রহমান মুন্সী</h2>
           <h3 className="head-2 text-center">পুলিশ সুপার, নারায়ণগঞ্জ</h3>
           <p className="para-1 text-black! text-center">০১৩২০০৯০৩০০</p>
@@ -17,7 +17,7 @@ const OfficeProdan = () => {
 
       {/* Right Side Slider */}
       <div className="w-full md:w-[70%] shadow-sm border border-gray-200 rounded-xl p-5">
-        <p className="para-1 text-black! leading-6">
+        <p className="para-1 text-xs! text-black! leading-6">
           As a professional law enforcing agency our objective is to prevent and
           control crime, detection of crime and to the apprehend the criminals
           before the learned court. With the advancement of ICT, modus operandi
@@ -37,7 +37,7 @@ const OfficeProdan = () => {
           be able to implement the vision 2021 and the dream of digital
           Bangladesh.
         </p>
-        <p className="para-1 text-black! mt-2 leading-6">
+        <p className="para-1 text-xs! text-black! mt-2 leading-6">
           একটি পেশাদারী আইন প্রয়োগের সংস্থা হিসাবে আমাদের উদ্দেশ্য হল অপরাধ
           প্রতিরোধ করা এবং নিয়ন্ত্রণ করা, অপরাধ সনাক্তকরণ এবং অপরাধীদের সনাক্ত
           করা আদালতের আগে । আইসিটি-এর অগ্রগতির সঙ্গে সঙ্গে দুর্নীতিমূলক ও

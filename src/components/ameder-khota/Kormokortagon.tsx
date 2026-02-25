@@ -6,9 +6,9 @@ const Kormokortagon = () => {
       {kormokortaData.map((data) => (
         <div
           key={data.id}
-          className=" rounded-xl bg-brand/50 border border-gray-200 hover:shadow-xl transition-all duration-500 group flex flex-col justify-between h-full"
+          className=" rounded-xl bg-brand/15 border border-gray-200 hover:shadow-xl transition-all duration-500 group flex flex-col justify-between h-full"
         >
-          <div className="h-[280px] md:h-[430px] w-full overflow-hidden rounded-t-xl">
+          <div className="h-[280px] md:h-[360px] w-full overflow-hidden rounded-t-xl">
             <img
               src={data.img}
               alt={data.name}
@@ -16,9 +16,11 @@ const Kormokortagon = () => {
             />
           </div>
           <div className=" rounded-b-lg py-5">
-            <h2 className="head-1 text-white! text-center">{data.name}</h2>
-            <h2 className="para-2 mt-1.5">{data.deg}</h2>
-            <p className="para-1 text-center mt-2 font-medium">{data.phone}</p>
+            <h2 className="head-1  text-center">{data.name}</h2>
+            <h2 className="para-2 text-black! mt-1.5">{data.deg}</h2>
+            <p className="para-1 text-center mt-2 font-medium text-black!">
+              {data.phone}
+            </p>
           </div>
         </div>
       ))}
