@@ -5,7 +5,7 @@ import GridView from "./GridView";
 import RowView from "./RowView";
 
 const NocCard = () => {
-  const [viewMode, setViewMode] = useState<"grid" | "row">("grid");
+  const [viewMode, setViewMode] = useState<"grid" | "row">("row");
 
   return (
     <div className="wrapper mt-8 space-y-6 mb-10">
@@ -27,17 +27,6 @@ const NocCard = () => {
           {/* View Toggle start*/}
 
           <button
-            onClick={() => setViewMode("grid")}
-            className={`p-2 rounded-lg ${
-              viewMode === "grid"
-                ? "bg-brand text-white"
-                : "bg-gray-100 text-gray-600"
-            }`}
-          >
-            <FaThLarge />
-          </button>
-
-          <button
             onClick={() => setViewMode("row")}
             className={`p-2 rounded-lg ${
               viewMode === "row"
@@ -46,6 +35,16 @@ const NocCard = () => {
             }`}
           >
             <FaList />
+          </button>
+          <button
+            onClick={() => setViewMode("grid")}
+            className={`p-2 rounded-lg ${
+              viewMode === "grid"
+                ? "bg-brand text-white"
+                : "bg-gray-100 text-gray-600"
+            }`}
+          >
+            <FaThLarge />
           </button>
           {/* View toggle end */}
         </div>

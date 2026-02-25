@@ -2,11 +2,11 @@ const OfficeProdan = () => {
   return (
     <div className=" mt-10 flex flex-col md:flex-row gap-5">
       {/* Left Side Static Image */}
-      <div className="w-full md:w-[30%] shadow-sm border border-gray-200 rounded-xl">
+      <div className="w-full md:w-[31%] shadow-sm border border-gray-200 rounded-xl">
         <img
           src="/home/sp.jpg"
           alt="Static"
-          className="w-full  h-[280px] md:h-[380px] rounded-t-xl"
+          className="w-full  h-[280px] md:h-[380px] rounded-t-xl object-cover"
         />
         <div className="  bg-brand/15 py-3.5 rounded-b-xl">
           <h2 className=" head-1 text-center">মোহাম্মদ মিজানুর রহমান মুন্সী</h2>
@@ -16,7 +16,7 @@ const OfficeProdan = () => {
       </div>
 
       {/* Right Side Slider */}
-      <div className="w-full md:w-[70%] shadow-sm border border-gray-200 rounded-xl p-5">
+      <div className="w-full md:w-[67%] shadow-sm border border-gray-200 rounded-xl p-5">
         <p className="para-1 text-xs! text-black! leading-6">
           As a professional law enforcing agency our objective is to prevent and
           control crime, detection of crime and to the apprehend the criminals

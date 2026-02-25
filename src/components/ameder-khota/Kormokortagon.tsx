@@ -2,7 +2,7 @@ import { kormokortaData } from "../../../data/data";
 
 const Kormokortagon = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-5 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-10 ">
       {kormokortaData.map((data) => (
         <div
           key={data.id}
@@ -17,7 +17,9 @@ const Kormokortagon = () => {
           </div>
           <div className=" rounded-b-lg py-5">
             <h2 className="head-1  text-center">{data.name}</h2>
-            <h2 className="para-2 text-black! mt-1.5">{data.deg}</h2>
+            <h2 className="para-2 font-normal! text-black! mt-1.5">
+              {data.deg}
+            </h2>
             <p className="para-1 text-center mt-2 font-medium text-black!">
               {data.phone}
             </p>
