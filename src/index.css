@@ -29,3 +29,14 @@ body {
 .head-3 {
   @apply text-center text-white font-semibold text-xl md:text-2xl lg:text-3xl;
 }
+
+.head-4 {
+  @apply text-xl sm:text-2xl text-center text-white font-semibold;
+}
+
+.para-4 {
+  @apply text-sm font-normal text-gray-400;
+}
+.head-5 {
+  @apply text-yellow-500 font-semibold text-sm;
+}

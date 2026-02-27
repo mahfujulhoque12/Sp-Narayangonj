@@ -55,4 +55,5 @@ export const navItems: NavItem[] = [
   },
 
   { label: "এনওসি", path: "/noc" },
+  { label: "যোগাযোগ", path: "/contact" },
 ];

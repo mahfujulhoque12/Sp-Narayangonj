@@ -1,6 +1,6 @@
 const OfficeProdan = () => {
   return (
-    <div className=" mt-10 flex flex-col md:flex-row gap-5">
+    <div className="flex flex-col md:flex-row gap-5">
       {/* Left Side Static Image */}
       <div className="w-full md:w-[31%] shadow-sm border border-gray-200 rounded-xl">
         <img
