@@ -10,10 +10,10 @@ const Footer = () => {
       </div>
       <hr className="text-gray-500" />
       <div className="flex flex-col sm:flex-row justify-between items-center py-6 wrapper">
-        <p className="para-4">
+        <p className="para-6">
           © ২০২৪ পুলিশ সুপার, নারায়ণগঞ্জ। সর্বস্বত্ব সংরক্ষিত।
         </p>
-        <p className="para-4">বাংলাদেশ পুলিশ দ্বারা পরিচালিত</p>
+        <p className="para-6">বাংলাদেশ পুলিশ দ্বারা পরিচালিত</p>
       </div>
     </div>
   );

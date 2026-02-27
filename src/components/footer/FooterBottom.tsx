@@ -20,7 +20,7 @@ const FooterBottom = () => {
           </div>
         </div>
 
-        <p className="para-4 mt-5">
+        <p className="para-6 mt-5">
           নারায়ণগঞ্জ জেলা পুলিশ জনগণের সেবায় নিবেদিত। নিরাপদ ও শান্তিপূর্ণ
           সমাজ গঠনই আমাদের অঙ্গীকার।
         </p>
@@ -33,28 +33,28 @@ const FooterBottom = () => {
 
         <Link
           to={"#"}
-          className="para-4 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
+          className="para-6 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
         >
           <LuExternalLink />
           বাংলাদেশ পুলিশ
         </Link>
         <Link
           to={"#"}
-          className="para-4 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
+          className="para-6 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
         >
           <LuExternalLink />
           পুলিশ সদর দপ্তর
         </Link>
         <Link
           to={"#"}
-          className="para-4 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
+          className="para-6 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
         >
           <LuExternalLink />
           ডিজিটাল নিরাপত্তা আইন
         </Link>
         <Link
           to={"#"}
-          className="para-4 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
+          className="para-6 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
         >
           <LuExternalLink />
           স্বরাষ্ট্র মন্ত্রণালয়
@@ -68,31 +68,31 @@ const FooterBottom = () => {
 
         <Link
           to={"/ameder-khota"}
-          className="para-4 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
+          className="para-6 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
         >
           আমাদের সম্পর্কে
         </Link>
         <Link
           to={"#"}
-          className="para-4 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
+          className="para-6 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
         >
           সেবাসমূহ
         </Link>
         <Link
           to={"/noc"}
-          className="para-4 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
+          className="para-6 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
         >
           এনওসি
         </Link>
         <Link
           to={"/khobor"}
-          className="para-4 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
+          className="para-6 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
         >
           খবর
         </Link>
         <Link
           to={"/contact"}
-          className="para-4 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
+          className="para-6 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
         >
           যোগাযোগ
         </Link>
@@ -105,21 +105,21 @@ const FooterBottom = () => {
 
         <Link
           to={"#"}
-          className="para-4 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
+          className="para-6 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
         >
           <FaMapMarkerAlt className="text-yellow-500" />
           পুলিশ সুপার কার্যালয়, নারায়ণগঞ্জ, বাংলাদেশ
         </Link>
         <Link
           to={"#"}
-          className="para-4 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
+          className="para-6 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
         >
           <IoCallSharp className="text-yellow-500" />
           +৮৮০ ২-৭৬৪৮২২২
         </Link>
         <Link
           to={"#"}
-          className="para-4 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
+          className="para-6 flex items-center gap-2 hover:text-yellow-500! transition-all duration-300 mb-2"
         >
           <MdOutlineEmail className="text-yellow-500" />
           spnarayanganj@police.gov.bd
@@ -127,7 +127,7 @@ const FooterBottom = () => {
 
         <Link
           to={"#"}
-          className="para-4 flex items-center gap-2 text-red-200! transition-all duration-300 mb-2 bg-red-500/20 mt-4 py-4 px-3 rounded-lg hover:bg-red-500 border border-red-500 hover:text-white!"
+          className="para-6 flex items-center gap-2 text-red-200! transition-all duration-300 mb-2 bg-red-500/20 mt-4 py-4 px-3 rounded-lg hover:bg-red-500 border border-red-500 hover:text-white!"
         >
           <IoCallSharp />
           জরুরি সেবা: ৯৯৯

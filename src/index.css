@@ -35,6 +35,9 @@ body {
 }
 
 .para-4 {
+  @apply text-sm font-normal text-gray-500;
+}
+.para-6 {
   @apply text-sm font-normal text-gray-400;
 }
 .head-5 {

@@ -7,6 +7,8 @@ import AmederKhota from "./pages/AmederKhota";
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./components/ScrollTop";
 import Contact from "./pages/Contact";
+import Khobor from "./pages/Khobor";
+import PoliceLines from "./pages/PoliceLines";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/noc" element={<NOC />} />
         <Route path="/ameder-khota" element={<AmederKhota />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/khobor" element={<Khobor />} />
+        <Route path="/police-lines" element={<PoliceLines />} />
       </Routes>
       <Footer />
     </BrowserRouter>

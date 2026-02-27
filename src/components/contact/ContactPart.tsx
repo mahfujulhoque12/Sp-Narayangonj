@@ -20,7 +20,7 @@ const ContactPart = () => {
           </button>
           <div>
             <h4 className="head-5 text-white!">কার্যালয়</h4>
-            <p className="para-4 mt-2">
+            <p className="para-6 mt-2">
               পুলিশ সুপার কার্যালয়, নারায়ণগঞ্জ, বাংলাদেশ
             </p>
           </div>
@@ -34,8 +34,8 @@ const ContactPart = () => {
           </button>
           <div>
             <h4 className="head-5 text-white!">ফোন</h4>
-            <p className="para-4 mt-1">+৮৮০ ২-৭৬৪৮২২২</p>
-            <p className="para-4 mt-2 text-red-300!">জরুরি সেবা: ৯৯৯</p>
+            <p className="para-6 mt-1">+৮৮০ ২-৭৬৪৮২২২</p>
+            <p className="para-6 mt-2 text-red-300!">জরুরি সেবা: ৯৯৯</p>
           </div>
         </div>
         {/* 1-------- */}
@@ -47,7 +47,7 @@ const ContactPart = () => {
           </button>
           <div>
             <h4 className="head-5 text-white!">ইমেইল</h4>
-            <p className="para-4 mt-1">spnarayanganj@police.gov.bd</p>
+            <p className="para-6 mt-1">spnarayanganj@police.gov.bd</p>
           </div>
         </div>
         {/* 1-------- */}
@@ -59,7 +59,7 @@ const ContactPart = () => {
           </button>
           <div>
             <h4 className="head-5 text-white!">অফিস সময়</h4>
-            <p className="para-4 mt-1">
+            <p className="para-6 mt-1">
               অফিস সময়: রবিবার - বৃহস্পতিবার, সকাল ৯টা - বিকাল ৫টা
             </p>
           </div>

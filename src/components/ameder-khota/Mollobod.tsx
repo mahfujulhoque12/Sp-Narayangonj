@@ -52,13 +52,16 @@ const Mollobod = () => {
         {values.map(({ id, title, description, icon: Icon }) => (
           <div
             key={id}
-            className="bg-white hover:shadow-xl transition-all duration-300 rounded-xl px-5 flex justify-center items-center flex-col py-8"
+            className="bg-white h-full hover:shadow-xl transition-all duration-300 rounded-xl px-5 py-8 flex flex-col items-center text-center shadow"
           >
             <div className="p-2 rounded-full bg-brand/10 text-brand mb-4">
               <Icon size={20} />
             </div>
+
             <p className="head-2 mb-2">{title}</p>
-            <p className="para-1 text-gray-600! text-center">{description}</p>
+
+            {/* Push description to take equal space */}
+            <p className="para-1 text-gray-600!">{description}</p>
           </div>
         ))}
       </div>

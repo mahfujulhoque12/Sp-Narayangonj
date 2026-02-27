@@ -23,24 +23,11 @@ export const navItems: NavItem[] = [
   },
   {
     label: "পুলিশ লাইন্স",
-    children: [
-      { label: "থানা", path: "#" },
-
-      { label: "ফাঁড়ি", path: "#" },
-      { label: "তদন্ত কেন্দ্র", path: "#" },
-      { label: "অফিসসমূহ", path: "#" },
-    ],
+    path: "/police-lines",
   },
   {
     label: "খবর",
-    children: [
-      { label: "অভিযান", path: "#" },
-
-      { label: "আটক-উদ্ধার", path: "#" },
-      { label: "প্রেস ব্রিফিং", path: "#" },
-      { label: "বিজ্ঞপ্তি", path: "#" },
-      { label: "সফলতা", path: "#" },
-    ],
+    path: "/khobor",
   },
   {
     label: "অন্যান্য বিভাগ",
