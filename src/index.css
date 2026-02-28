@@ -20,6 +20,9 @@ body {
   @apply text-blue-500 font-bold text-4xl;
 }
 
+.para-5 {
+  @apply text-yellow-700 text-sm font-medium hover:underline;
+}
 .head-1 {
   @apply text-xl font-semibold text-black;
 }
