@@ -12,15 +12,15 @@ export const navItems: NavItem[] = [
     path: "/ameder-khota",
   },
   {
-    label: "পুলিশ প্রশাসন",
+    label: "প্রশাসন",
     path: "/police-lines",
   },
   {
-    label: "পুলিশী কার্যক্রম",
+    label: "কার্যক্রম",
     path: "/khobor",
   },
   {
-    label: "পুলিশী সেবা",
+    label: "সেবা",
     path: "",
   },
   {
@@ -28,11 +28,11 @@ export const navItems: NavItem[] = [
     path: "",
   },
   {
-    label: "উল্লেখযোগ্য অর্জন",
+    label: "অর্জন",
     path: "",
   },
   {
-    label: "ছবি গ্যালারী",
+    label: "গ্যালারী",
     path: "",
   },
 
