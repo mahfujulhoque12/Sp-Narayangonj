@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { navItems } from "./Items";
-import { MdLanguage } from "react-icons/md";
 
 export default function MiddleNav() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -107,14 +106,6 @@ export default function MiddleNav() {
             );
           })}
         </div>
-
-        {/* right part  */}
-
-        <button className="text-sm font-medium rounded-full px-3 py-1.5 border border-brand cursor-pointer flex items-center gap-2 ">
-          <MdLanguage size={18} />
-          Ban
-        </button>
-        {/* right part end  */}
 
         {/* MOBILE BUTTON */}
         <div className="md:hidden">

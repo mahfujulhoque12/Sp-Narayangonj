@@ -8,37 +8,32 @@ export const navItems: NavItem[] = [
   { label: "হোম", path: "/" },
 
   {
-    label: "আমাদের কথা",
+    label: "পুলিশ সম্পর্কিত",
     path: "/ameder-khota",
   },
-
   {
-    label: "সেবাসমূহ",
-    children: [
-      { label: "সেবার তালিকা", path: "#" },
-
-      { label: "কি সেবা কিভাবে পাবেন", path: "#" },
-      { label: "সিটিজেন চার্টার", path: "#" },
-    ],
-  },
-  {
-    label: "পুলিশ লাইন্স",
+    label: "পুলিশ প্রশাসন",
     path: "/police-lines",
   },
   {
-    label: "খবর",
+    label: "পুলিশী কার্যক্রম",
     path: "/khobor",
   },
   {
-    label: "অন্যান্য বিভাগ",
-    children: [
-      { label: "ডি বি", path: "#" },
-
-      { label: "ডি এস বি", path: "#" },
-      { label: "সার্কেল", path: "#" },
-      { label: "সি আই ডি", path: "#" },
-      { label: "সিটি এস বি", path: "#" },
-    ],
+    label: "পুলিশী সেবা",
+    path: "",
+  },
+  {
+    label: "অপরাধ ব্যবস্থাপনা",
+    path: "",
+  },
+  {
+    label: "উল্লেখযোগ্য অর্জন",
+    path: "",
+  },
+  {
+    label: "ছবি গ্যালারী",
+    path: "",
   },
 
   { label: "এনওসি", path: "/noc" },
