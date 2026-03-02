@@ -21,19 +21,19 @@ export const navItems: NavItem[] = [
   },
   {
     label: "সেবা",
-    path: "",
+    path: "/a",
   },
   {
     label: "অপরাধ ব্যবস্থাপনা",
-    path: "",
+    path: "/b",
   },
   {
     label: "অর্জন",
-    path: "",
+    path: "/c",
   },
   {
     label: "গ্যালারী",
-    path: "",
+    path: "/ddd",
   },
 
   { label: "এনওসি", path: "/noc" },
