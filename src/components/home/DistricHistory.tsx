@@ -21,8 +21,8 @@ const DistricHistory = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [autoplay.current]);
 
   return (
-    <section className="wrapper mb-10 bg-brand p-5 rounded-xl">
-      <div className="flex flex-col md:flex-row gap-6 md:items-stretch">
+    <section className="wrapper mb-10  ">
+      <div className="flex bg-brand p-5 rounded-xl flex-col md:flex-row gap-6 md:items-stretch">
         {/* Left - Slider */}
         <div className="w-full md:w-[40%] h-full">
           <div className="overflow-hidden rounded-xl h-full" ref={emblaRef}>

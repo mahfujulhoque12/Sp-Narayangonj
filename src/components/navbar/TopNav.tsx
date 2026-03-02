@@ -8,7 +8,7 @@ const TopNav = () => {
 
         {/* right part  */}
 
-        <button className="text-white text-sm font-medium rounded-full px-3 py-1.5 border border-brand cursor-pointer flex items-center gap-2 ">
+        <button className="bg-yellow-600 text-white text-sm font-medium rounded-full px-3 py-1.5 border border-brand cursor-pointer flex items-center gap-1 hover:bg-white transition-all duration-300 hover:text-yellow-600">
           <MdLanguage size={18} />
           Ban
         </button>

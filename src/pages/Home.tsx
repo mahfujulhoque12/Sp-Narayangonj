@@ -11,8 +11,8 @@ const Home = () => {
     <div>
       <BottomNav />
       <Hero />
-      <Samprotick />
       <ImportantLinksAndNotice />
+      <Samprotick />
       <DistricHistory />
       <VissionMission />
       <Map />
