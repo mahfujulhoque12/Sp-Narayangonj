@@ -1,6 +1,6 @@
 const Map = () => {
   return (
-    <div className="wrapper mb-15 ">
+    <div className="wrapper mb-10 ">
       <h2 className="head-4   text-brand! text-start! mb-5">
         নারায়ণগঞ্জ পুলিশ কার্যালয় মানচিত্র
       </h2>
