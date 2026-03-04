@@ -11,18 +11,10 @@ const images = [img1, img2, img3, img4, img5];
 const PoliceUnit = () => {
   return (
     <section className="wrapper mb-10">
-      <h1 className="head-4   text-brand! text-start! mb-5">
-        পুলিশ ইউনিট সমূহ
-      </h1>
+      <h1 className="head-4   text-brand!  mb-5">পুলিশ ইউনিট সমূহ</h1>
 
-      <div className="bg-brand rounded-xl  py-10">
-        <Marquee
-          speed={60}
-          pauseOnHover={true}
-          gradient={true}
-          gradientColor="white"
-          gradientWidth={100}
-        >
+      <div className="bg-brand rounded-xl  py-6">
+        <Marquee speed={60} pauseOnHover={true}>
           {images.map((img, index) => (
             <div
               key={index}

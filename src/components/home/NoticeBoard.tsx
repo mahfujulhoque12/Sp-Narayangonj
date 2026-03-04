@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import { Link } from "react-router";
 
 interface Notice {
   id: number;
@@ -41,7 +42,7 @@ const NoticeBoard: React.FC = () => {
     },
   ];
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 2000 }),
+    Autoplay({ delay: 3500 }),
   ]);
 
   useEffect(() => {
@@ -76,6 +77,14 @@ const NoticeBoard: React.FC = () => {
                   <p className="text-gray-700 text-sm leading-relaxed">
                     {notice.description}
                   </p>
+                  <div className="mt-3 flex justify-end">
+                    <Link
+                      to="#"
+                      className="inline-block text-black font-medium hover:underline transition text-sm"
+                    >
+                      আরও পড়ুন →
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}

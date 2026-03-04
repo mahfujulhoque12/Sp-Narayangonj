@@ -5,11 +5,13 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 const ImportantLinksAndNotice = () => {
   return (
     <div className="wrapper mb-10 flex flex-col sm:flex-row gap-5">
-      <div className="w-full sm:w-[25%] bg-white shadow-sm p-5 rounded-xl hover:shadow-xl transition-all duration-300">
-        <div className="flex flex-col gap-3">
-          <h3 className="head-1 border-b  border-b-gray-300 pb-2">
+      <div className="w-full sm:w-[28%] bg-white shadow-sm  rounded-xl hover:shadow-xl transition-all duration-300">
+        <div className="   bg-brand rounded-t-xl py-5">
+          <h3 className="head-1 text-center! border-b-gray-300 text-white!">
             জাতীয় সেবা লিংক
           </h3>
+        </div>
+        <div className="flex flex-col p-5 gap-3">
           <Link to="https://moha.gov.bd/" className="para-5" target="_blank">
             স্বরাষ্ট্র মন্ত্রণালয়
           </Link>
@@ -44,7 +46,7 @@ const ImportantLinksAndNotice = () => {
             অনলাইন পুলিশ ক্লিয়ারেন্স
           </Link>
         </div>
-        <div className="flex justify-end mt-1">
+        <div className="flex justify-end mt-1 px-5">
           <Link
             to={""}
             className="hover:text-yellow-500 transition-all duration-300"
@@ -53,14 +55,16 @@ const ImportantLinksAndNotice = () => {
           </Link>
         </div>
       </div>
-      <div className="w-full sm:w-[50%]">
+      <div className="w-full sm:w-[44%]">
         <NoticeBoard />
       </div>
-      <div className="w-full sm:w-[25%] bg-white shadow-sm p-5 rounded-xl hover:shadow-xl transition-all duration-300">
-        <div className="flex flex-col gap-3">
-          <h3 className="head-1 border-b  border-b-gray-300 pb-2">
+      <div className="w-full sm:w-[28%] bg-white shadow-sm  rounded-xl hover:shadow-xl transition-all duration-300">
+        <div className="   bg-brand rounded-t-xl py-5">
+          <h3 className="head-1 text-center! border-b-gray-300 text-white!">
             আন্তর্জাতিক সেবা লিংক
           </h3>
+        </div>
+        <div className="flex p-5 flex-col gap-3">
           <Link
             to="https://www.eprocure.gov.bd"
             className="para-5"
@@ -95,7 +99,7 @@ const ImportantLinksAndNotice = () => {
           </Link>
         </div>
 
-        <div className="flex justify-end mt-1">
+        <div className="flex justify-end mt-1 px-5">
           <Link
             to={""}
             className="hover:text-yellow-500 transition-all duration-300"

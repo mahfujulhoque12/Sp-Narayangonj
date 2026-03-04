@@ -69,7 +69,7 @@ const DistricHistory = () => {
               to="#"
               className="inline-block text-white font-medium hover:underline transition text-sm"
             >
-              বিস্তারিত দেখুন →
+              আরও দেখুন →
             </Link>
           </div>
         </div>
