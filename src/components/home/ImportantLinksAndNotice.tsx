@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import NoticeBoard from "./NoticeBoard";
-import { FaArrowRight } from "react-icons/fa";
 
 const ImportantLinksAndNotice = () => {
   return (
@@ -55,7 +54,7 @@ const ImportantLinksAndNotice = () => {
             to={""}
             className="hover:text-yellow-500 transition-all duration-300 text-sm flex items-center gap-1"
           >
-            আরও দেখুন <FaArrowRight size={12} />
+            আরও দেখুন
           </Link>
         </div>
       </div>
@@ -112,7 +111,7 @@ const ImportantLinksAndNotice = () => {
             to={""}
             className="hover:text-yellow-500 transition-all duration-300 text-sm flex items-center gap-1"
           >
-            আরও দেখুন <FaArrowRight size={12} />
+            আরও দেখুন
           </Link>
         </div>
       </div>
