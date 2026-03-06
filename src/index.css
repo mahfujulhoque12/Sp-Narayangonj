@@ -46,3 +46,7 @@ body {
 .head-5 {
   @apply text-yellow-500 font-semibold text-sm;
 }
+
+.link-style {
+  @apply bg-gray-50 shadow py-2 rounded-lg px-4 hover:bg-brand/10 transition-all duration-300;
+}

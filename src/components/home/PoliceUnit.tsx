@@ -1,12 +1,42 @@
 import Marquee from "react-fast-marquee";
 
-import img1 from "../../../public/kormokorta/1.jpg";
-import img2 from "../../../public/kormokorta/2.jpg";
-import img3 from "../../../public/kormokorta/3.jpg";
-import img4 from "../../../public/kormokorta/4.jpg";
-import img5 from "../../../public/kormokorta/5.jpg";
-
-const images = [img1, img2, img3, img4, img5];
+const unitCart = [
+  {
+    name: "নারায়ণগঞ্জ সদর থানা",
+    incharge: "ওসি মোঃ আব্দুল্লাহ আল মামুন",
+    phone: "01711-111111",
+  },
+  {
+    name: "ফতুল্লা থানা",
+    incharge: "ওসি মোঃ কামরুল হাসান",
+    phone: "01711-222222",
+  },
+  {
+    name: "সিদ্ধিরগঞ্জ থানা",
+    incharge: "ওসি মোঃ রফিকুল ইসলাম",
+    phone: "01711-333333",
+  },
+  {
+    name: "রূপগঞ্জ থানা",
+    incharge: "ওসি মোঃ শহিদুল ইসলাম",
+    phone: "01711-444444",
+  },
+  {
+    name: "বন্দর থানা",
+    incharge: "ওসি মোঃ মাহবুব আলম",
+    phone: "01711-555555",
+  },
+  {
+    name: "ফতুল্লা থানা",
+    incharge: "ওসি মোঃ কামরুল হাসান",
+    phone: "01711-222222",
+  },
+  {
+    name: "সিদ্ধিরগঞ্জ থানা",
+    incharge: "ওসি মোঃ রফিকুল ইসলাম",
+    phone: "01711-333333",
+  },
+];
 
 const PoliceUnit = () => {
   return (
@@ -15,16 +45,21 @@ const PoliceUnit = () => {
 
       <div className="bg-brand rounded-xl  py-6">
         <Marquee speed={60} pauseOnHover={true}>
-          {images.map((img, index) => (
+          {unitCart.map((data, index) => (
             <div
               key={index}
-              className="relative w-[200px] h-[200px] mx-4 rounded-xl overflow-hidden shadow-md bg-white"
+              className="mx-4 p-5 rounded-xl overflow-hidden shadow-md bg-white"
             >
-              <img
-                src={img}
-                alt={`Police Unit ${index + 1}`}
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
+              <div>
+                <h1 className="head-1 text-lg!">{data.name}</h1>
+                <h2 className="para-1 text-black! mt-1">
+                  {" "}
+                  <b> ইনচার্জ :</b> {data.incharge}
+                </h2>
+                <p className="text-sm font-normal text-gray-700 mt-0.5">
+                  {data.phone}
+                </p>
+              </div>
             </div>
           ))}
         </Marquee>

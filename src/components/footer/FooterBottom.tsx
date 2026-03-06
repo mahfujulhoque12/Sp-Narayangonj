@@ -2,7 +2,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import { LuExternalLink } from "react-icons/lu";
 import { MdOutlineEmail } from "react-icons/md";
-import { TbBadgeFilled } from "react-icons/tb";
+
 import { Link } from "react-router";
 
 const FooterBottom = () => {
@@ -11,9 +11,15 @@ const FooterBottom = () => {
       {/* 1st card  */}
       <div>
         <div className="flex items-center gap-3">
-          <div className="bg-yellow-500/20 border border-yellow-500 text-yellow-500 p-2 rounded-full">
-            <TbBadgeFilled size={25} />
-          </div>
+          <Link to={"/"}>
+            <div className="border border-white rounded-full">
+              <img
+                src="/logo.png"
+                alt="Logo"
+                className="h-16 w-16 rounded-full object-cover"
+              />
+            </div>
+          </Link>
           <div>
             <h2 className="head-2 text-white! font-semibold!">জেলা পুলিশ</h2>
             <p className="para-1 text-yellow-500!"> নারায়ণগঞ্জ</p>

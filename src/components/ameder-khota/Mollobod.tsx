@@ -1,39 +1,32 @@
-import type { IconType } from "react-icons";
 import { CgMenuRound } from "react-icons/cg";
 import { HiOutlineBadgeCheck } from "react-icons/hi";
 import { IoStarOutline } from "react-icons/io5";
 import { LuUsers } from "react-icons/lu";
 
-type ValueItem = {
-  id: number;
-  title: string;
-  description: string;
-  icon: IconType;
-};
-
-const values: ValueItem[] = [
+const values = [
   {
     id: 1,
-    title: "সততা",
-    description: "প্রতিটি কাজে সত্য এবং স্বচ্ছতা বজায় রাখা।",
+    title: "শৃঙ্খলা",
+    description: "আইন ও নিয়ম মেনে সুশৃঙ্খল সমাজ গড়ে তোলা।",
     icon: IoStarOutline,
   },
   {
     id: 2,
-    title: "সেবা",
-    description: "জনগণের প্রয়োজনকে সর্বোপরি রাখা।",
+    title: "নিরাপত্তা",
+    description: "জনগণের জানমাল রক্ষা এবং নিরাপদ পরিবেশ নিশ্চিত করা।",
     icon: HiOutlineBadgeCheck,
   },
   {
     id: 3,
-    title: "পেশাদারিত্ব",
-    description: "পুলিশিংয়ে সর্বোচ্চ মান বজায় রাখা।",
+    title: "প্রগতি",
+    description:
+      "আধুনিক প্রযুক্তি ও দক্ষতার মাধ্যমে উন্নত পুলিশিং নিশ্চিত করা।",
     icon: CgMenuRound,
   },
   {
     id: 4,
     title: "জবাবদিহিতা",
-    description: "আমাদের কাজ এবং সিদ্ধান্তের দায়িত্ব নেওয়া।",
+    description: "আমাদের কাজ ও সিদ্ধান্তের জন্য জনগণের কাছে দায়বদ্ধ থাকা।",
     icon: LuUsers,
   },
 ];

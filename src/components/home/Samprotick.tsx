@@ -1,5 +1,5 @@
-import { FaRegClock, FaTag } from "react-icons/fa";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaRegClock } from "react-icons/fa";
+
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router";
 import { KhoborData } from "../../../data/data";
@@ -20,7 +20,7 @@ const Samprotick = () => {
           to={"/khobor"}
           className="para-2 text-yellow-500! flex items-center gap-2"
         >
-          আরও দেখুন <FaArrowRightLong />
+          আরও পড়ুন →
         </Link>
       </div>
 
@@ -37,10 +37,9 @@ const Samprotick = () => {
               alt={item.title}
               className="w-full h-50 object-cover rounded-t-xl"
             />
-            <div className="p-4">
+            <div className="p-4 relative">
               <div className="flex justify-between text-[11px] text-gray-500 ">
                 <span className="flex items-center gap-1 text-xs bg-[#1E3A5F1A] px-2 py-1 rounded-full">
-                  <FaTag />
                   {categoryNames[item.category]}
                 </span>
                 <span className="flex items-center gap-1 text-xs  px-2 py-1 rounded-full">
@@ -53,11 +52,11 @@ const Samprotick = () => {
                   ? item.title.slice(0, 25) + "…"
                   : item.title}
               </h3>
-              <p className="para-4">{item.description.slice(0, 40)}...</p>
+              <p className="para-4">{item.description.slice(0, 48)}...</p>
 
               <Link
                 to="#"
-                className="para-4 flex items-center  hover:text-yellow-500! transition-all duration-300 mt-3 text-brand!"
+                className="para-4  text-xs! absolute right-3 bottom-3 flex items-center  hover:text-yellow-500! transition-all duration-300 mt-3 text-brand!"
               >
                 বিস্তারিত <MdKeyboardArrowRight size={22} />
               </Link>

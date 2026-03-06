@@ -1,11 +1,6 @@
-"use client";
-
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 import { useState } from "react";
-import { FaEye, FaDownload, FaShareAlt, FaTimes } from "react-icons/fa";
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
+import { FaEye, FaDownload } from "react-icons/fa";
+import ModalImg from "./ModalImg";
 
 interface GridItem {
   id: string;
@@ -21,21 +16,7 @@ interface GridViewProps {
 const GridView = ({ data }: GridViewProps) => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const handleShare = async (image: string) => {
-    try {
-      if (navigator.share) {
-        await navigator.share({
-          title: "Image Preview",
-          url: image,
-        });
-      } else {
-        await navigator.clipboard.writeText(image);
-        alert("Image link copied!");
-      }
-    } catch (error) {
-      console.error("Share failed:", error);
-    }
-  };
+  const closeModal = () => setSelectedImage(null);
 
   return (
     <>
@@ -79,48 +60,9 @@ const GridView = ({ data }: GridViewProps) => {
         ))}
       </div>
 
-      {/* ✅ Custom Modal */}
+      {/* Modal */}
       {selectedImage && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-5">
-          <div className="relative bg-white rounded-2xl p-5 max-w-4xl w-full">
-            {/* Close Button */}
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 text-gray-500 hover:text-red-500"
-            >
-              <FaTimes size={20} />
-            </button>
-
-            {/* Zoomable Image */}
-            <div className="flex justify-center">
-              <Zoom>
-                <img
-                  src={selectedImage}
-                  alt="Preview"
-                  className="max-h-[70vh] rounded-lg object-contain"
-                />
-              </Zoom>
-            </div>
-
-            {/* Action Buttons Inside Modal */}
-            <div className="flex justify-center gap-6 mt-6">
-              <button
-                onClick={() => handleShare(selectedImage)}
-                className="flex items-center gap-2 bg-brand text-white px-4 py-2 rounded-lg hover:opacity-90 transition"
-              >
-                <FaShareAlt /> শেয়ার
-              </button>
-
-              <a
-                href={selectedImage}
-                download
-                className="flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:opacity-90 transition"
-              >
-                <FaDownload /> ডাউনলোড
-              </a>
-            </div>
-          </div>
-        </div>
+        <ModalImg closeModal={closeModal} selectedImage={selectedImage} />
       )}
     </>
   );

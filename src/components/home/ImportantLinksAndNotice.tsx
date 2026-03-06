@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import NoticeBoard from "./NoticeBoard";
-import { FaCircleArrowRight } from "react-icons/fa6";
 
 const ImportantLinksAndNotice = () => {
   return (
@@ -11,20 +10,24 @@ const ImportantLinksAndNotice = () => {
             জাতীয় সেবা লিংক
           </h3>
         </div>
-        <div className="flex flex-col p-5 gap-3">
-          <Link to="https://moha.gov.bd/" className="para-5" target="_blank">
+        <div className="flex flex-col px-5  pt-5 pb-2 gap-3">
+          <Link
+            to="https://moha.gov.bd/"
+            className="para-5 link-style"
+            target="_blank"
+          >
             স্বরাষ্ট্র মন্ত্রণালয়
           </Link>
           <Link
             to="https://bangladesh.gov.bd/index.php"
-            className="para-5"
+            className="para-5 link-style"
             target="_blank"
           >
             বাংলাদেশ জাতীয় প্রবেশদ্বার
           </Link>
           <Link
             to="https://www.eprocure.gov.bd"
-            className="para-5"
+            className="para-5 link-style"
             target="_blank"
           >
             জাতীয় ই-গভর্নমেন্ট প্রকিউরমেন্ট
@@ -32,7 +35,7 @@ const ImportantLinksAndNotice = () => {
 
           <Link
             to="https://www.theiacp.org/"
-            className="para-5"
+            className="para-5 link-style"
             target="_blank"
           >
             আইএসিপি
@@ -40,18 +43,18 @@ const ImportantLinksAndNotice = () => {
 
           <Link
             to="https://pcc.police.gov.bd/en"
-            className="para-5"
+            className="para-5 link-style"
             target="_blank"
           >
             অনলাইন পুলিশ ক্লিয়ারেন্স
           </Link>
         </div>
-        <div className="flex justify-end mt-1 px-5">
+        <div className="flex justify-end mt-1 px-5 pb-3">
           <Link
             to={""}
-            className="hover:text-yellow-500 transition-all duration-300"
+            className="hover:text-yellow-500 transition-all duration-300 text-sm"
           >
-            <FaCircleArrowRight size={25} />
+            আরও দেখুন →
           </Link>
         </div>
       </div>
@@ -64,27 +67,31 @@ const ImportantLinksAndNotice = () => {
             আন্তর্জাতিক সেবা লিংক
           </h3>
         </div>
-        <div className="flex p-5 flex-col gap-3">
+        <div className="flex flex-col px-5  pt-5 pb-2 gap-3">
           <Link
             to="https://www.eprocure.gov.bd"
-            className="para-5"
+            className="para-5 link-style"
             target="_blank"
           >
             জাতীয় ই-গভর্নমেন্ট প্রকিউরমেন্ট
           </Link>
           <Link
             to="https://www.interpol.int"
-            className="para-5"
+            className="para-5 link-style"
             target="_blank"
           >
             ইন্টারপোল
           </Link>
-          <Link to="https://www.un.org/en" className="para-5" target="_blank">
+          <Link
+            to="https://www.un.org/en"
+            className="para-5 link-style"
+            target="_blank"
+          >
             জাতিসংঘ
           </Link>
           <Link
             to="https://www.theiacp.org/"
-            className="para-5"
+            className="para-5 link-style"
             target="_blank"
           >
             আইএসিপি
@@ -92,19 +99,19 @@ const ImportantLinksAndNotice = () => {
 
           <Link
             to="https://pcc.police.gov.bd/en"
-            className="para-5"
+            className="para-5 link-style"
             target="_blank"
           >
             অনলাইন পুলিশ ক্লিয়ারেন্স
           </Link>
         </div>
 
-        <div className="flex justify-end mt-1 px-5">
+        <div className="flex justify-end mt-1 px-5 pb-3">
           <Link
             to={""}
-            className="hover:text-yellow-500 transition-all duration-300"
+            className="hover:text-yellow-500 transition-all duration-300 text-sm"
           >
-            <FaCircleArrowRight size={25} />
+            আরও দেখুন →
           </Link>
         </div>
       </div>
