@@ -1,6 +1,5 @@
-import { FaRegClock } from "react-icons/fa";
+import { FaArrowRight, FaRegClock } from "react-icons/fa";
 
-import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router";
 import { KhoborData } from "../../../data/data";
 
@@ -20,7 +19,7 @@ const Samprotick = () => {
           to={"/khobor"}
           className="para-2 text-yellow-500! flex items-center gap-2"
         >
-          আরও পড়ুন →
+          আরও পড়ুন <FaArrowRight size={12} />
         </Link>
       </div>
 
@@ -52,13 +51,15 @@ const Samprotick = () => {
                   ? item.title.slice(0, 25) + "…"
                   : item.title}
               </h3>
-              <p className="para-4">{item.description.slice(0, 48)}...</p>
+              <p className="para-4 text-xs!">
+                {item.description.slice(0, 48)}...
+              </p>
 
               <Link
                 to="#"
-                className="para-4  text-xs! absolute right-3 bottom-3 flex items-center  hover:text-yellow-500! transition-all duration-300 mt-3 text-brand!"
+                className="para-4  text-xs! absolute right-3 bottom-3 gap-1 flex items-center  hover:text-yellow-500! transition-all duration-300 mt-3 text-brand!"
               >
-                বিস্তারিত <MdKeyboardArrowRight size={22} />
+                বিস্তারিত <FaArrowRight size={12} />
               </Link>
             </div>
           </div>

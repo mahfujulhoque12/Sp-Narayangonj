@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import NoticeBoard from "./NoticeBoard";
+import { FaArrowRight } from "react-icons/fa";
 
 const ImportantLinksAndNotice = () => {
   return (
@@ -49,12 +50,12 @@ const ImportantLinksAndNotice = () => {
             অনলাইন পুলিশ ক্লিয়ারেন্স
           </Link>
         </div>
-        <div className="flex justify-end mt-1 px-5 pb-3">
+        <div className="flex justify-center mt-1 px-5 pb-3">
           <Link
             to={""}
-            className="hover:text-yellow-500 transition-all duration-300 text-sm"
+            className="hover:text-yellow-500 transition-all duration-300 text-sm flex items-center gap-1"
           >
-            আরও দেখুন →
+            আরও দেখুন <FaArrowRight size={12} />
           </Link>
         </div>
       </div>
@@ -106,12 +107,12 @@ const ImportantLinksAndNotice = () => {
           </Link>
         </div>
 
-        <div className="flex justify-end mt-1 px-5 pb-3">
+        <div className="flex justify-center mt-1 px-5 pb-3">
           <Link
             to={""}
-            className="hover:text-yellow-500 transition-all duration-300 text-sm"
+            className="hover:text-yellow-500 transition-all duration-300 text-sm flex items-center gap-1"
           >
-            আরও দেখুন →
+            আরও দেখুন <FaArrowRight size={12} />
           </Link>
         </div>
       </div>

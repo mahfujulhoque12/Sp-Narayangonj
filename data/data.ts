@@ -1,5 +1,9 @@
 type Status = "approved" | "pending" | "rejected";
 import img1 from "../public/kormokorta/1.jpg";
+import s1 from "../public/home/s1.jpg";
+import s2 from "../public/home/s2.jpg";
+import s3 from "../public/home/s3.jpg";
+import s4 from "../public/home/s4.jpg";
 
 interface NocItem {
   id: string;
@@ -474,7 +478,7 @@ export const ExOfficeProdanData = [
 export const KhoborData = [
   {
     id: 101,
-    img: img18,
+    img: s1,
     title: "নারায়ণগঞ্জে মাদক বিরোধী অভিযানে ৫ জন গ্রেপ্তার",
     description:
       "জেলা পুলিশের বিশেষ অভিযানে মাদক ব্যবসার সাথে জড়িত ৫ জনকে গ্রেপ্তার করা হয়েছে।",
@@ -483,7 +487,7 @@ export const KhoborData = [
   },
   {
     id: 102,
-    img: img18,
+    img: s2,
     title: "অবৈধ অস্ত্র উদ্ধার অভিযান সফল",
     description:
       "রাতভর পরিচালিত অভিযানে বিপুল পরিমাণ অবৈধ অস্ত্র উদ্ধার করা হয়েছে।",
@@ -492,7 +496,7 @@ export const KhoborData = [
   },
   {
     id: 103,
-    img: img18,
+    img: s3,
     title: "চোরাচালান বিরোধী অভিযানে আটক ৩",
     description: "বিশেষ টহল অভিযানে চোরাচালানের সাথে জড়িত ৩ জন আটক হয়েছে।",
     date: "2025-02-13",
@@ -500,7 +504,7 @@ export const KhoborData = [
   },
   {
     id: 104,
-    img: img18,
+    img: s4,
     title: "সন্ত্রাস বিরোধী অভিযান পরিচালিত",
     description:
       "আইনশৃঙ্খলা পরিস্থিতি স্বাভাবিক রাখতে বিশেষ অভিযান পরিচালিত হয়েছে।",

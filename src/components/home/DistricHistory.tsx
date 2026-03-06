@@ -6,6 +6,7 @@ import { Link } from "react-router";
 import img1 from "../../../public/home/e1.jpg";
 import img2 from "../../../public/home/e2.jpg";
 import img3 from "../../../public/home/e3.jpg";
+import { FaArrowRight } from "react-icons/fa";
 
 const images = [img1, img2, img3];
 
@@ -63,17 +64,16 @@ const DistricHistory = () => {
               সদরদপ্তর।
             </p>
             <p className="text-gray-100 text-sm leading-relaxed mt-4">
-              নারায়ণগঞ্জ বাংলাদেশের নারায়ণগঞ্জ জেলায় অবস্থিত একটি শহর। ১৯৮৪
-              সালে এই জেলা প্রতিষ্ঠা লাভ করে, পূর্বে এটি ঢাকা জেলার
+              নারায়ণগঞ্জ বাংলাদেশের...
             </p>
           </div>
 
-          <div className="mt-6 absolute right-8 bottom-8">
+          <div className="mt-6 absolute right-8 bottom-13">
             <Link
               to="#"
-              className="inline-block text-yellow-500 font-medium hover:underline transition text-sm"
+              className=" text-yellow-500 font-medium hover:underline transition text-sm flex items-center gap-1"
             >
-              আরও দেখুন →
+              আরও দেখুন <FaArrowRight size={12} />
             </Link>
           </div>
         </div>

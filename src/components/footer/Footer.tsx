@@ -15,13 +15,13 @@ const Footer = () => {
           © ২০২৪ পুলিশ সুপার, নারায়ণগঞ্জ। সর্বস্বত্ব সংরক্ষিত।
         </p>
         <p className="para-6">
-          Developed by{" "}
+          ডেভেলপ করেছেন {""}
           <Link
             target="_blank"
             className="text-yellow-500"
             to={"https://pariciti.com/"}
           >
-            Porichiti
+            Paraciti
           </Link>
         </p>
       </div>
