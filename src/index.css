@@ -21,7 +21,7 @@ body {
 }
 
 .para-5 {
-  @apply text-yellow-700 text-sm font-medium hover:underline;
+  @apply text-yellow-700 text-sm font-medium;
 }
 .head-1 {
   @apply text-xl font-semibold text-black;

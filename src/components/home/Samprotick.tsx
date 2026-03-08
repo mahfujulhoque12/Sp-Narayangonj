@@ -29,24 +29,20 @@ const Samprotick = () => {
         {KhoborData.slice(0, 4).map((item) => (
           <div
             key={item.id}
-            className="bg-white rounded-xl shadow  flex flex-col gap-2 hover:shadow-xl transition"
+            className="bg-white rounded-xl shadow  flex flex-col hover:shadow-xl transition relative"
           >
             <img
               src={item.img}
               alt={item.title}
               className="w-full h-50 object-cover rounded-t-xl"
             />
-            <div className="p-4 relative">
+            <div className="p-4 ">
               <div className="flex justify-between text-[11px] text-gray-500 ">
-                <span className="flex items-center gap-1 text-xs bg-[#1E3A5F1A] px-2 py-1 rounded-full">
+                <span className="flex absolute right-4 top-4 items-center gap-1 text-xs bg-gray-800 px-2 py-1 rounded-full text-gray-50">
                   {categoryNames[item.category]}
                 </span>
-                <span className="flex items-center gap-1 text-xs  px-2 py-1 rounded-full">
-                  <FaRegClock />
-                  {item.date}
-                </span>
               </div>
-              <h3 className="head-2 my-3">
+              <h3 className="head-2 mb-3">
                 {item.title.length > 10
                   ? item.title.slice(0, 25) + "…"
                   : item.title}
@@ -55,9 +51,14 @@ const Samprotick = () => {
                 {item.description.slice(0, 48)}...
               </p>
 
+              <span className="flex items-center gap-1 text-xs  px-2 py-1 rounded-full mt-1">
+                <FaRegClock />
+                {item.date}
+              </span>
+
               <Link
                 to="#"
-                className="para-4  text-xs! absolute right-3 bottom-3 gap-1 flex items-center  hover:text-yellow-500! transition-all duration-300 mt-3 text-brand!"
+                className="para-4  text-xs! absolute right-5 bottom-3 gap-1 flex items-center  hover:text-yellow-500! transition-all duration-300 mt-3 text-brand!"
               >
                 বিস্তারিত <FaArrowRight size={12} />
               </Link>

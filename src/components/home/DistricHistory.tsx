@@ -46,7 +46,7 @@ const DistricHistory = () => {
         <div className="w-full md:w-[60%] text-white shadow-sm border border-gray-600 rounded-xl p-6 md:p-8 flex flex-col justify-between relative">
           <div>
             <h2 className="head-4   text-start! mb-4 text-yellow-500!">
-              নারায়ণগঞ্জ জেলার ইতিহাস
+              জেলার নামকরণ, ইতিহাস ও ভৌগোলিক পরিচিতি
             </h2>
 
             <p className="text-gray-100 text-sm leading-relaxed">
@@ -64,7 +64,7 @@ const DistricHistory = () => {
               সদরদপ্তর।
             </p>
             <p className="text-gray-100 text-sm leading-relaxed mt-4">
-              নারায়ণগঞ্জ বাংলাদেশের...
+              নারায়ণগঞ্জ বাংলাদেশের নারায়ণগঞ্জ জেলায় অবস্থিত একটি শহর...
             </p>
           </div>
 
