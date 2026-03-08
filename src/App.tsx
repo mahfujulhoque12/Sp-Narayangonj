@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollTop";
 import Contact from "./pages/Contact";
 import Khobor from "./pages/Khobor";
 import PoliceLines from "./pages/PoliceLines";
+import Vowgolik from "./pages/Vowgolik";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/khobor" element={<Khobor />} />
         <Route path="/police-lines" element={<PoliceLines />} />
+        <Route path="/vowgolik" element={<Vowgolik />} />
       </Routes>
       <Footer />
     </BrowserRouter>

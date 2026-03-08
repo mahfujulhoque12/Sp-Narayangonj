@@ -29,7 +29,7 @@ export const navItems: NavItem[] = [
       },
       {
         label: "পুলিশ লাইন্স সম্পর্কিত তথ্য",
-        path: "/police-line",
+        path: "/police-lines",
       },
       {
         label: "কর্মসম্পাদন",

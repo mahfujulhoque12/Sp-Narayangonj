@@ -68,7 +68,7 @@ const NoticeBoard: React.FC = () => {
               >
                 <div className="bg-gray-50 rounded-xl p-6 hover:shadow-md transition duration-300">
                   <div className="flex justify-between items-center mb-3">
-                    <h3 className="text-xl font-semibold text-gray-800">
+                    <h3 className="text-xl font-semibold text-gray-800 font-hind">
                       {notice.title}
                     </h3>
                     <span className="text-sm text-gray-500">{notice.date}</span>

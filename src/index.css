@@ -1,11 +1,18 @@
 @import "tailwindcss";
 @theme {
   --color-brand: #0a007c;
+  --font-hind: "Hind Siliguri", sans-serif;
 }
 html,
 body {
   background-color: #f7fafb;
+
+  font-family: "Noto Serif Bengali", serif;
 }
+.font-hind {
+  font-family: var(--font-hind);
+}
+
 .wrapper {
   @apply max-w-300 mx-auto px-4;
 }
@@ -24,17 +31,17 @@ body {
   @apply text-yellow-700 text-sm font-medium;
 }
 .head-1 {
-  @apply text-xl font-semibold text-black;
+  @apply text-xl font-hind font-semibold text-black;
 }
 .head-2 {
-  @apply text-base font-medium text-black;
+  @apply text-base  font-medium text-black;
 }
 .head-3 {
-  @apply text-center text-white font-semibold text-xl md:text-2xl lg:text-3xl;
+  @apply text-center font-hind text-white font-semibold text-xl md:text-2xl lg:text-3xl;
 }
 
 .head-4 {
-  @apply text-xl sm:text-2xl text-center text-white font-semibold;
+  @apply text-xl font-hind sm:text-2xl text-center text-white font-semibold;
 }
 
 .para-4 {
@@ -43,10 +50,17 @@ body {
 .para-6 {
   @apply text-sm font-normal text-gray-400;
 }
+.para-7 {
+  @apply text-base font-normal text-gray-700;
+}
 .head-5 {
   @apply text-yellow-500 font-semibold text-sm;
 }
 
 .link-style {
   @apply bg-gray-50 shadow py-2 rounded-lg px-4 hover:bg-brand/10 transition-all duration-300;
+}
+
+.div-style {
+  @apply bg-white h-full hover:shadow-xl transition-all duration-300 rounded-xl px-5 py-8  shadow;
 }
