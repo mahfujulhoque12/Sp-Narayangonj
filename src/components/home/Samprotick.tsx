@@ -58,7 +58,7 @@ const Samprotick = () => {
 
               <Link
                 to="#"
-                className="para-4  text-xs! absolute right-5 bottom-3 gap-1 flex items-center  hover:text-yellow-500! transition-all duration-300 mt-3 text-brand!"
+                className="para-4  text-xs! absolute right-5 bottom-5 gap-1 flex items-center  hover:text-yellow-500! transition-all duration-300 mt-3 text-brand!"
               >
                 বিস্তারিত <FaArrowRight size={12} />
               </Link>
