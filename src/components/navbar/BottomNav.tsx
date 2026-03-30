@@ -5,6 +5,9 @@ const newsData: string[] = [
   "০৬ (ছয়) কেজি গাঁজা সহ ০১(এক) আসামী গ্রেফাতার..",
   "০৭(সাত) কেজি গাজা সহ দুইজন আসামীর গ্রেফতার..",
   "পরকিয়ার জেরে স্বামী কর্তৃক স্ত্রী হত্যা মামলার মূল রহস্য..",
+  "০৭(সাত) কেজি গাজা সহ দুইজন আসামীর গ্রেফতার..",
+  "০৭(সাত) কেজি গাজা সহ দুইজন আসামীর গ্রেফতার..",
+  "০৭(সাত) কেজি গাজা সহ দুইজন আসামীর গ্রেফতার..",
 ];
 
 const BottomNav = () => {
@@ -13,7 +16,7 @@ const BottomNav = () => {
   return (
     <div className="full bg-brand">
       <div className=" wrapper py-3 overflow-hidden z-0 flex items-center gap-3 ">
-        <p className="whitespace-nowrap text-white text-base font-semibold">
+        <p className="whitespace-nowrap text-white text-base font-semibold font-hind">
           শিরোনাম
         </p>
         <Marquee pauseOnHover speed={60} gradient={false}>

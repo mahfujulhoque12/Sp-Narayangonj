@@ -53,7 +53,7 @@ const NoticeBoard: React.FC = () => {
 
   return (
     <section className="">
-      <div className=" bg-white shadow-lg rounded-xl p-5">
+      <div className=" bg-white shadow-lg rounded-xl px-5 pt-5 pb-10">
         {/* Header */}
         <div className="border-b border-b-gray-300 pb-4 mb-6">
           <h2 className="head-4   text-brand!">নোটিশ বোর্ড</h2>
