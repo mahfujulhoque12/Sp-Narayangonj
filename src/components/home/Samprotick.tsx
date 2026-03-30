@@ -37,7 +37,7 @@ const Samprotick = () => {
               className="w-full h-50 object-cover rounded-t-xl"
             />
             <div className="p-4 ">
-              <div className="flex justify-between text-[11px] text-gray-500 ">
+              <div className="flex justify-between text-[11px] text-gray-500 items-center">
                 <span className="flex absolute right-4 top-4 items-center gap-1 text-xs bg-gray-800 px-2 py-1 rounded-full text-gray-50">
                   {categoryNames[item.category]}
                 </span>
