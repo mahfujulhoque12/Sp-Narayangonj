@@ -22,10 +22,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-md max-w-xl mx-auto">
-      <h2 className="text-xl font-semibold text-brand mb-6">বার্তা পাঠান</h2>
+    <div className="bg-white p-6 rounded-xl shadow-md mx-auto">
+      <h2 className="text-xl font-semibold text-brand ">বার্তা পাঠান</h2>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
         <InputField
           label="নাম"
           name="name"

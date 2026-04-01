@@ -65,7 +65,7 @@ export const navItems: NavItem[] = [
   },
   {
     label: "গ্যালারী",
-    path: "/ddd",
+    path: "/gallery",
   },
 
   { label: "এনওসি", path: "/noc" },

@@ -46,25 +46,31 @@ const services: ServiceItem[] = [
 
 const OtherServices = () => {
   return (
-    <div className="wrapper pb-15 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5">
-      {services.map((service) => (
-        <div
-          key={service.id}
-          className="bg-white shadow-sm p-5 rounded-xl hover:shadow-xl transition-all duration-300 cursor-pointer group"
-        >
-          <div className="flex justify-center items-center">
-            <div className="bg-[#1E3A5F1A] p-3 rounded-xl group-hover:bg-[#1E3A5F] transition-all duration-300">
-              <div className="text-[#1E3A5F] group-hover:text-white transition-all duration-300">
-                {service.icon}
+    <div className="wrapper">
+      <h2 className="head-3 text-black! mb-10">
+        জাতীয় ও আন্তর্জাতিক সেবা লিংক সমূহ
+      </h2>
+
+      <div className=" pb-15 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5">
+        {services.map((service) => (
+          <div
+            key={service.id}
+            className="bg-white shadow-sm p-5 rounded-xl hover:shadow-xl transition-all duration-300 cursor-pointer group"
+          >
+            <div className="flex justify-center items-center">
+              <div className="bg-[#1E3A5F1A] p-3 rounded-xl group-hover:bg-[#1E3A5F] transition-all duration-300">
+                <div className="text-[#1E3A5F] group-hover:text-white transition-all duration-300">
+                  {service.icon}
+                </div>
               </div>
             </div>
-          </div>
 
-          <p className="para-4 text-center mt-3 text-gray-800">
-            {service.title}
-          </p>
-        </div>
-      ))}
+            <p className="para-4 text-center mt-3 text-gray-800">
+              {service.title}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

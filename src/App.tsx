@@ -11,6 +11,8 @@ import Khobor from "./pages/Khobor";
 import PoliceLines from "./pages/PoliceLines";
 import Vowgolik from "./pages/Vowgolik";
 import KPI from "./pages/KPI";
+import Gallery from "./pages/Gallery";
+import GalleryItem from "./components/gallery/GalleryItem";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
 
         <Route path="/police-lines" element={<PoliceLines />} />
         <Route path="/vowgolik" element={<Vowgolik />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery/:id" element={<GalleryItem />} />
       </Routes>
       <Footer />
     </BrowserRouter>

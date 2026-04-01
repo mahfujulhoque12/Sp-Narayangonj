@@ -48,10 +48,10 @@ const Samprotick = () => {
                   : item.title}
               </h3>
               <p className="para-4 text-xs!">
-                {item.description.slice(0, 48)}...
+                {item.description.slice(0, 75)}...
               </p>
 
-              <span className="flex items-center gap-1 text-xs  px-2 py-1 rounded-full mt-1">
+              <span className="flex items-center gap-1 text-xs  px-2 py-1 rounded-full mt-3">
                 <FaRegClock />
                 {item.date}
               </span>

@@ -6,9 +6,9 @@ import ContactForm from "./ContactForm";
 
 const ContactPart = () => {
   return (
-    <div className="my-15 wrapper grid grid-cols-1 md:grid-cols-2 gap-5">
-      <div className="bg-brand rounded-xl p-6">
-        <h2 className="head-4 text-start! font-medium! flex items-center gap-2 text-yellow-500!">
+    <div className="my-15 wrapper flex flex-col sm:flex-row gap-5">
+      <div className="bg-brand rounded-xl p-6 w-full sm:w-[40%]">
+        <h2 className="head-4 text-start! font-bold! flex items-center gap-2 text-yellow-500!">
           <FiMessageSquare />
           ঠিকানা এবং যোগাযোগ
         </h2>
@@ -35,7 +35,6 @@ const ContactPart = () => {
           <div>
             <h4 className="head-5 text-white!">ফোন</h4>
             <p className="para-6 mt-1">+৮৮০ ২-৭৬৪৮২২২</p>
-            <p className="para-6 mt-2 text-red-300!">জরুরি সেবা: ৯৯৯</p>
           </div>
         </div>
         {/* 1-------- */}
@@ -66,7 +65,7 @@ const ContactPart = () => {
         </div>
         {/* 1-------- */}
       </div>
-      <div>
+      <div className="w-full sm:w-[60%]">
         <ContactForm />
       </div>
     </div>
