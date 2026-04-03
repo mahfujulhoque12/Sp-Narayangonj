@@ -46,22 +46,54 @@ export const navItems: NavItem[] = [
     path: "/khobor",
   },
   {
-    label: "সেবা",
+    label: "সেবাসমূহ",
     path: "/a",
     children: [
       {
-        label: "test",
-        path: "2",
+        label: "পুলিশ ক্লিয়ারেন্স",
+        path: "/police-clerence",
+      },
+      {
+        label: "চাকুরির ভেরিফিকেশন",
+        path: "/job-varifacition",
+      },
+      {
+        label: "পাসপোর্ট ভেরিফিকেশন",
+        path: "/passport-varifacition",
+      },
+      {
+        label: "উইমেন্স সাপোর্ট সেন্টার",
+        path: "/womens-support-center",
+      },
+      {
+        label: "ইভেন্ট ম্যানেজমেন্ট",
+        path: "/event-management",
+      },
+      {
+        label: "হারানো ও প্রাপ্তি",
+        path: "/lost-and-found",
+      },
+      {
+        label: "নিখোঁজ ব্যক্তি সংক্রান্ত তথ্য",
+        path: "/nikhoj-bekti",
+      },
+      {
+        label: "অসনাক্তকৃত মৃতদেহ",
+        path: "/osonaktokrito-mritodeho",
+      },
+      {
+        label: "জাতীয় গুরুত্বপূর্ণ অনুষ্ঠান সমূহ",
+        path: "/national-important-event",
       },
     ],
   },
   {
     label: "অপরাধ ব্যবস্থাপনা",
-    path: "/b",
+    path: "/oporad",
   },
   {
     label: "অর্জন",
-    path: "/c",
+    path: "/orjon",
   },
   {
     label: "গ্যালারী",
